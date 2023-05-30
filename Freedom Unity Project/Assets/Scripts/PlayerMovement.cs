@@ -19,8 +19,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, rb.velocity.y);
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
+
+        if (horizontalInput > 0.01)
+            transform.localScale = Vector3.one;
+        else if (horizontalInput < -0.01)
+            transform.localScale = new Vector3(-1, 1, 1);
 
         if (Input.GetKeyDown(KeyCode.Space))
             rb.velocity = new Vector2(rb.velocity.x, speed);
