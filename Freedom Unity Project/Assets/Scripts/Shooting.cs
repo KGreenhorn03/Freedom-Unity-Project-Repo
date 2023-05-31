@@ -25,9 +25,16 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
 
+        float aimDirection = Input.GetAxis("Horizontal");
+
         GameObject bullet = Instantiate(bulletPrefab, shootingPoint.position, shootingPoint.rotation);
         Rigidbody2D bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
-        bulletRigidbody.velocity = new Vector2(1 * bulletSpeed, bulletRigidbody.velocity.y);
+
+
+        if (aimDirection > 0.01)
+            bulletRigidbody.velocity = new Vector2(1 * bulletSpeed, bulletRigidbody.velocity.y);
+        else if (aimDirection < -0.01)
+            bulletRigidbody.velocity = new Vector2(-1 * bulletSpeed, bulletRigidbody.velocity.y);
 
     }
 
