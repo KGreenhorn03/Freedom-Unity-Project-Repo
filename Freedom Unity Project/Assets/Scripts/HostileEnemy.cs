@@ -46,4 +46,5 @@ public class HostileEnemy : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().velocity = direction * 10f;
 
     }
+
 }
