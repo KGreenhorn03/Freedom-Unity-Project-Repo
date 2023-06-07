@@ -2,30 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-public class HealthSystem : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
-    public Slider healthBarSlider;
 
     public int maxHealth = 100;
     public int currentHealth;
 
-    private void Start()
+    void Start()
     {
 
         currentHealth = maxHealth;
 
     }
-
-    private void FixedUpdate()
-    {
-
-        healthBarSlider.value = currentHealth;
-        healthBarSlider.maxValue = maxHealth;
-
-    }
-
     public void Damage(int damageAmount)
     {
 
@@ -35,6 +23,7 @@ public class HealthSystem : MonoBehaviour
         {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
 
         }
 
@@ -53,5 +42,4 @@ public class HealthSystem : MonoBehaviour
         }
 
     }
-
 }
