@@ -14,6 +14,15 @@ public class DamageDealer : MonoBehaviour
         {
             health.Damage(damageAmount);
         }
+
+        EnemyHealth health1 = other.GetComponent<EnemyHealth>();
+        if (health1 != null)
+        {
+
+            health1.Damage(damageAmount);
+
+        }
+
     }
 
 }

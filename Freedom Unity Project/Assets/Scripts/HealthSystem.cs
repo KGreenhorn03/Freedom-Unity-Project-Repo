@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
+
+    // Declare Variables.
     public Slider healthBarSlider;
 
     public int maxHealth = 100;
     public int currentHealth;
 
+    // 
     private void Start()
     {
 
@@ -18,7 +21,7 @@ public class HealthSystem : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
 
         healthBarSlider.value = currentHealth;
@@ -39,7 +42,6 @@ public class HealthSystem : MonoBehaviour
         }
 
     }
-
     public void Heal(int amount)
     {
 

@@ -1,19 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class EnemyHealth : MonoBehaviour
 {
 
     public int maxHealth = 100;
     public int currentHealth;
 
+    // Start is called before the first frame update
     void Start()
     {
 
         currentHealth = maxHealth;
 
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
     public void Damage(int damageAmount)
     {
 
@@ -22,24 +30,16 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
+            Die();
 
         }
 
     }
 
-    public void Heal(int amount)
+    private void Die()
     {
 
-        currentHealth += amount;
-
-        if (currentHealth > maxHealth)
-        {
-
-            currentHealth = maxHealth;
-
-        }
+        Destroy(gameObject);
 
     }
 }
