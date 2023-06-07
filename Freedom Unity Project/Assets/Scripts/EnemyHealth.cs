@@ -16,19 +16,19 @@ public class EnemyHealth : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // Function will be used in the DamageDealer script so the desired amount of damage can be inflicted.
+    // Function will be used to determine the players current health and what happens in the event of health reaching 0.
     public void Damage(int damageAmount)
     {
+
+        // Current health will be equal to whatever remains after damage has been dealt.
 
         currentHealth -= damageAmount;
 
         if (currentHealth <= 0)
         {
+
+            // If health reaches 0, the Die function will be called.
 
             Die();
 
@@ -36,8 +36,11 @@ public class EnemyHealth : MonoBehaviour
 
     }
 
+    // This function determines what will happen to the enemy upon dying.
     private void Die()
     {
+
+        // The enemy will be destroyed in the event of their health reaching 0.
 
         Destroy(gameObject);
 
