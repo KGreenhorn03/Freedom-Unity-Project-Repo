@@ -10,23 +10,37 @@ public class PlayerMovement : MonoBehaviour
     public int speed = 5;
     private Rigidbody2D rb;
 
+    // Start is called before the first frame update.
     private void Start()
     {
 
+        // Call on the Rigidbody component.
         rb = GetComponent<Rigidbody2D>();
 
     }
 
+    // Update is called once per frame
     private void Update()
     {
+
+
+        // If the player presses an input on the horizontal (X axis) then the player shall move in that direction at the speed determined by the "speed" variable.
 
         float horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
 
+
+        // If the player moves to the right (positive) on the X axis then they shall face right.
+
         if (horizontalInput > 0.01)
             transform.localScale = Vector3.one;
+
+        // If the player moves to the left (negative) on the X axis then they shall face left.
+
         else if (horizontalInput < -0.01)
             transform.localScale = new Vector3(-1, 1, 1);
+
+        // If the player presses space, the player will jump.
 
         if (Input.GetKeyDown(KeyCode.Space))
             rb.velocity = new Vector2(rb.velocity.x, speed);
