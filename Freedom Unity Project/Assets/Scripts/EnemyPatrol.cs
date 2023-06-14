@@ -38,13 +38,13 @@ public class EnemyPatrol : MonoBehaviour
 
         }
 
-        if(Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+        if(Vector2.Distance(transform.position, currentPoint.position) < 0.2f && currentPoint == pointB.transform)
         {
 
             currentPoint = pointA.transform;
 
         }
-        if(Vector2.Distance(transform.position, currentPoint.position) < 0.05f && currentPoint == pointA.transform)
+        if(Vector2.Distance(transform.position, currentPoint.position) < 0.2f && currentPoint == pointA.transform)
         {
 
             currentPoint = pointB.transform;
