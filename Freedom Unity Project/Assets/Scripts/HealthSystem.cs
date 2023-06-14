@@ -21,14 +21,6 @@ public class HealthSystem : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-
-        healthBarSlider.value = currentHealth;
-        healthBarSlider.maxValue = maxHealth;
-
-    }
-
     public void Damage(int damageAmount)
     {
 

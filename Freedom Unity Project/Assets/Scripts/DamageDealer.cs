@@ -28,6 +28,14 @@ public class DamageDealer : MonoBehaviour
 
         }
 
+        BossHealth health2 = other.GetComponent<BossHealth>();
+        if (health2 != null)
+        {
+
+            health2.Damage(damageAmount);
+
+        }
+
     }
 
 }
