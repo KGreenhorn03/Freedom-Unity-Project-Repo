@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarSlider: {fileID: 0}
-  maxHealth: 100
+  maxHealth: 200
   currentHealth: 0
 --- !u!114 &1395041490
 MonoBehaviour:
@@ -908,6 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  stage: 
 --- !u!50 &1395041492
 Rigidbody2D:
   serializedVersion: 4
