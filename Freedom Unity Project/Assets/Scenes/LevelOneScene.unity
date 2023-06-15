@@ -1899,7 +1899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &622074775
 Rigidbody2D:
@@ -2142,7 +2141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &647044977
 Rigidbody2D:
@@ -2678,7 +2676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &828226684
 Rigidbody2D:
@@ -2890,7 +2887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &861669422
 Rigidbody2D:
@@ -3133,7 +3129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &900424332
 Rigidbody2D:
@@ -3520,7 +3515,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5c27a4fb23e524f4ba9a40161d56a1d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 50d0b6a503e9fdd4f85e7461a7c0ea00, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3769,7 +3764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &1071915320
 Rigidbody2D:
@@ -4206,7 +4200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &1173097039
 Rigidbody2D:
@@ -5970,7 +5963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &1788837681
 Rigidbody2D:
@@ -6182,7 +6174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &1867897042
 Rigidbody2D:
@@ -6363,7 +6354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &1868618836
 Rigidbody2D:
@@ -6705,7 +6695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!50 &2018438980
 Rigidbody2D:
@@ -6950,7 +6939,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486ecb374aede26409501c825eec29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   currentHealth: 0
 --- !u!114 &2041438139
 MonoBehaviour:

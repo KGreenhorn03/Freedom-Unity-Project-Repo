@@ -24,14 +24,14 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Alpha8))
+        if (Input.GetKeyDown(KeyCode.Keypad8))
         {
 
             SceneManager.LoadScene(stage);
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha9))
+        if (Input.GetKeyDown(KeyCode.Keypad9))
         {
 
             Application.Quit();
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
         // If the player presses space, the player will jump.
 
-        if (Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Keypad5))
             rb.velocity = new Vector2(rb.velocity.x, speed);
 
     }

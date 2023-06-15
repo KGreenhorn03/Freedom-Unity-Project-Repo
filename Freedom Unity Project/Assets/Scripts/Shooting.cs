@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Alpha6))
+        if (Input.GetKeyDown(KeyCode.Keypad6))
         {
 
             Shoot();
