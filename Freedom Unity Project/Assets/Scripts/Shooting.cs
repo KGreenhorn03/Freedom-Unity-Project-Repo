@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
 
             Shoot();
