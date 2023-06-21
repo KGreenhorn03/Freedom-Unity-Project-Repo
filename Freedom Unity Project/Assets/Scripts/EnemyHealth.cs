@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 
+    // Declare variables.
+
     private int maxHealth = 50;
     public int currentHealth;
 

@@ -688,7 +688,7 @@ MonoBehaviour:
 
 
     Press
-    "9" to Quit.'
+    "9" to quit.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77303661a31d8f84eb640b02b1b80bd2, type: 2}
   m_sharedMaterial: {fileID: 8281599025128064165, guid: 77303661a31d8f84eb640b02b1b80bd2, type: 2}
